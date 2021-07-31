@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    
+  
+<head>
+  <link rel="stylesheet" 
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  
+  <body>
+    <div>
+      <h1>Spli<br />tter</h1>
+    <br>
+    <main>
+      <form>
+        <label>Bill</label>
+        <br />
+        <i class="fa fa-dollar icon"></i>
+        <input id="bill-input" type="number" />
+
+        <h2>Select Tip %</h2>
+        <div class="grid-container">
+       
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+   
+          <input id="custon-tip-input" type="number" class="button-input" />
+        </div>
+      
+
+        <br />
+        <label>Number of People</label>
+        <br>
+        <i class="fa fa-user icon"></i>
+        <input id="people-input" type="number" />
+        <br>
+        <br>
+      </form>
+      
+      <div class=results>
+        <div>
+          <div>
+            <h2>Tip Amount</h2>
+            <h3>/ person</h3>
+          </div>
+        <p id="person-tip-display">$0</p>
+      </div>
+      <br>
+        <div>
+          <div>
+            <h2>Total</h2>
+            <h3>/ person</h3>
+          </div>
+         
+        
+        <p id="total-per-person-display">$0</p>
+      </div>
+
+        <br>
+        <button>RESET</button>
+      </div>
+    </main>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
