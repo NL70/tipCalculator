@@ -29,29 +29,41 @@
     <br>
     <main>
       <form>
-        <label>Bill</label>
+        <label id="bill-label">Bill</label>
+        <label id="negative-bill" class="isHidden">Cannot be negative</label>
         <br />
-        <i class="fa fa-dollar icon"></i>
-        <input id="bill-input" type="number" />
 
-        <h2>Select Tip %</h2>
+        <i class="fa fa-dollar icon"></i>
+        <input placeholder="0" id="bill-input" type="number" />
+        <br>
+        <h2 id="tip-label">Select Tip %</h2>
+        <label id="negative-tip" class="isHidden">Cannot be negative</label>
         <div class="grid-container">
        
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
+            <button value="5" type="button" class="tip-button">5%</button>
+            <button value="10" type="button" class="tip-button">10%</button>
+            <button value="15"type="button" class="tip-button">15%</button>
+            <button value="25"type="button" class="tip-button">25%</button>
+            <button value="50" type="button" class="tip-button">50%</button>
    
-          <input id="custon-tip-input" type="number" class="button-input" />
+          <input placeholder="Custom" id="custom-tip-input" type="number" class="button-input" />
         </div>
       
 
         <br />
-        <label>Number of People</label>
+        <!-- do error message when num of people < 1 -->
+        <!-- make tip num not be negative -->
+        <!-- make bill cant be negative -->
+        
+        <div class="">
+          <label id="people-label">Number of People</label>
+        <label id="zero-label" class="isHidden"> Can't be below 1</label>
+
+        </div>
+        
         <br>
         <i class="fa fa-user icon"></i>
-        <input id="people-input" type="number" />
+        <input placeholder="0" id="people-input" type="number" />
         <br>
         <br>
       </form>
@@ -62,7 +74,7 @@
             <h2>Tip Amount</h2>
             <h3>/ person</h3>
           </div>
-        <p id="person-tip-display">$0</p>
+        <p id="person-tip-display">$0.00</p>
       </div>
       <br>
         <div>
@@ -76,7 +88,7 @@
       </div>
 
         <br>
-        <button>RESET</button>
+        <button id="reset-button">RESET</button>
       </div>
     </main>
     <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /

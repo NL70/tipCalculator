@@ -160,6 +160,22 @@ p {
   color: var(--Strong-cyan);
 }
 
+[data-selected] {
+  background-color: var(--Strong-cyan);
+}
+
+.isZeroButText {
+  color: #b5806e;
+}
+
+.isHidden {
+  display: none;
+}
+
+.isZero {
+  border: solid 3px #b5806e;
+}
+
 @media (min-width: 1000px) {
   h1 {
     margin-bottom: 10px;
